@@ -1,6 +1,6 @@
 # CSCI 4707 Group Assignment 2
 
-## Group: Nathan Stangler, Reese Saladin, Adam Herbst, Johnny Yang
+## Group: Nathan Stangler (stang451), Reese Saladin (salad085), Adam Herbst (herbs127), Johnny Yang (yang8266)
 
 Requires the PAYMENT.sql script to be ran before ORDERS.sql.
 
