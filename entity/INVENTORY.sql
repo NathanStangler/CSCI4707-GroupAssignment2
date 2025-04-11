@@ -1,9 +1,7 @@
 CREATE TABLE INVENTORY (
-    InventoryBookID INT UNIQUE NOT NULL,
+    InventoryBookID INT PRIMARY KEY,
     RestockThreshold INT,
-    StockQuantity INT,
-    BookID INT NOT NULL,
-    PRIMARY KEY (InventoryBookID, BookID),
-    FOREIGN KEY (BookID) REFERENCES BOOK(BookID) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT INVENTORY_stock CHECK (StockQuantity >= 0)
+    StockQuantity INT CHECK (StockQuantity >= 0),
+    BookID INT NOT NULL UNIQUE,
+    FOREIGN KEY (BookID) REFERENCES BOOK(BookID) ON DELETE CASCADE ON UPDATE CASCADE
 );

@@ -1,5 +1,5 @@
 CREATE TABLE CUSTOMER (
-    CustomerID INT UNIQUE NOT NULL,
+    CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     PhoneNumber CHAR(10) UNIQUE,
@@ -7,6 +7,5 @@ CREATE TABLE CUSTOMER (
     Street VARCHAR(100),
     City VARCHAR(50),
     ZipCode CHAR(5),
-    State VARCHAR(50),
-    PRIMARY KEY (CustomerID)
+    State VARCHAR(50)
 );
