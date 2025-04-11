@@ -1,5 +1,5 @@
 CREATE TABLE ORDERS (
-    OrderID INT UNIQUE NOT NULL,
+    OrderID INT PRIMARY KEY,
     ShippingDate DATE,
     OrderDate DATE,
     Street VARCHAR(100),
@@ -7,7 +7,6 @@ CREATE TABLE ORDERS (
     ZipCode CHAR(5),
     State VARCHAR(50),
     PaymentID INT NOT NULL,
-    PRIMARY KEY (OrderID),
     FOREIGN KEY (PaymentID) REFERENCES PAYMENT(PaymentID) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT ORDERS_date CHECK (ShippingDate >= OrderDate)
 );
