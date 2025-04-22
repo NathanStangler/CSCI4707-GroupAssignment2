@@ -9,3 +9,5 @@ Requires the BOOK.sql script to be ran before INVENTORY.sql.
 The remaining entity scripts can be ran in any order.
 
 The relation scripts can be ran in any order after all of the entity scripts are ran.
+
+The Publisher entity from the ER diagram was changed to attributes within the BOOK entity.
